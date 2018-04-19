@@ -15,10 +15,10 @@ ul li a,a{
 	color:#333;
 	outline:0; 
 	-webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
 }
 a{
 	color:#0078D7;
@@ -221,7 +221,7 @@ section#footer-bar h4 {
 	font-weight:normal;
 	margin: 10px 0 18px;	
 }
-section#footer-bar .social_icons a {
+section#footer-bar .social_icons a{
 	display: block;
 	float: left;
 	width: 29px;
@@ -293,13 +293,13 @@ section.navbar{
 	text-transform: none;
 }
 #menu > ul{
-    display: block;
-    margin-left:0;	
+	display: block;
+	margin-left:0;	
 }
 #menu > ul > li{
-    list-style: none;
-    float: left;
-    position: relative;   
+	list-style: none;
+	float: left;
+	position: relative;   
 	margin-right: 0px;
 }
 #menu > ul > li > a {
@@ -310,7 +310,7 @@ section.navbar{
 	font-weight: bold;
 	text-align: center;
 	padding: 10px 14px;
-	}
+}
 #menu > ul > li.active{
 	background-color:#0078D7;
 }
@@ -324,34 +324,34 @@ section.navbar{
 #menu .current{color: #0078D7 !important;}
 
 #menu ul ul {
-    background: none repeat scroll 0 0 #eee;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-    padding: 0px;
-    position: absolute;
-    min-width:170px;
+	background: none repeat scroll 0 0 #eee;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+	padding: 0px;
+	position: absolute;
+	min-width:170px;
 	display:none;
 }
 #menu > ul > li > ul{
-    margin-left:10px;
-    margin-top:-12px;
+	margin-left:10px;
+	margin-top:-12px;
 	border:1px solid #ddd;
 	border-top:0;
 }
 #menu ul ul li {
-    list-style: none outside none;
-    position: relative;
+	list-style: none outside none;
+	position: relative;
 	border-top:1px solid #fff;
 	border-bottom:1px solid #ddd;
 }
 #menu ul ul li:last-child{
-    border-bottom: none !important
+	border-bottom: none !important
 }
 #menu ul ul li.menu-last{border-bottom: none;}
 #menu ul ul a{
-    display: block;
-    padding:7px 10px;
-    color: #333;
-    font-size: 12px;
+	display: block;
+	padding:7px 10px;
+	color: #333;
+	font-size: 12px;
 }
 #menu ul ul a:hover,#menu > ul > li:hover > a{color: #fff;background-color:#0078D7}
 #menu ul ul a:hover{background-color:#0078D7;}
@@ -359,14 +359,14 @@ section.navbar{
 #menu li:hover {visibility: inherit;}
 #menu li:hover ul,
 #menu li.sfHover ul {
-    left: -10px;
-    top: 52px;
-    z-index: 2299;
+	left: -10px;
+	top: 52px;
+	z-index: 2299;
 }
 #menu li li:hover ul,
 #menu li li.sfHover ul {
-    left: 130px;
-    top: 0px;
+	left: 130px;
+	top: 0px;
 }
 #menu li.sfHover > a{
 	color:#0078D7;
@@ -434,10 +434,10 @@ section.navbar{
 .product-box:hover{
 	background-color:#0078D7;
 	-webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
 	box-shadow: 0px 0px 5px #ccc;
 }
 .product-box:hover a{
@@ -713,7 +713,7 @@ section.our_client .row{
 .toggleMenu {
 	display:block;
 	width:100%;    
-    padding:10px 0;
+	padding:10px 0;
 	text-align:center;	
 	font-weight:bold;
 	background:url(../images/i_submenu.png) no-repeat 98% center;
@@ -729,7 +729,7 @@ section.our_client .row{
 	text-transform:none !important;
 }
 ._toggleMenu .nav > li.hover > ul {
-    display:block;
+	display:block;
 }
 
 /* Responsive
@@ -779,4 +779,39 @@ section.our_client .row{
 	.feature_box .service{	
 		border-bottom:1px solid #eee;
 	}
+}
+
+.social_icons2{
+	padding-right: 25px;
+	color: #fff;
+	border: solid 2px #fff;
+	border-radius: 50%;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.button{
+	color: #fff;
+	border: solid 2px #fff;
+	border-radius: 50%;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 48px;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	padding-left: 0px;
+	margin-right: 10px;
+	/*padding-right: 10px;*/
+}
+
+i.fa{
+	margin-left: -30px;
 }
