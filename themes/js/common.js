@@ -5,6 +5,13 @@
 })();
 
 var ww = document.body.clientWidth;
+$(document).ready(function(){
+	$("#btn-search").click(function(){
+		window.location.href = "products.html";
+
+
+	});
+});
 
 $(document).ready(function() {		
 	$("._toggleMenu .nav li a").each(function() {
@@ -60,4 +67,19 @@ $('#menu > ul').superfish({
 	speed:       'fast',
 	arrowClass: false,
 	autoArrows:  true
+});
+
+$(document).ready(function(){
+	$(":checkbox").change(function(){
+		// var a = $(this).attr('id');
+		// var b  = $("label[for = '" + a+ "']");
+		// alert($(b).val());
+
+		// var a = $("label[for = '" + $(this).attr("id") + "']");
+		// alert(a.text().trim());
+		// var t = new String("Trên 20 triệu");
+		// if(a.text().trim().normalize() == t.normalize())
+		// 	alert("bằng");
+		
+	});
 });

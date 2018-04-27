@@ -14,12 +14,13 @@
 	<!-- global styles -->
 	<link href="themes/css/flexslider.css" rel="stylesheet"/>
 	<link href="themes/css/main.css" rel="stylesheet"/>
-
+	<link rel="stylesheet" type="text/css" href="themes/css/jquery-ui.min.css">
 	<!-- scripts -->
 	<script src="themes/js/jquery-1.7.2.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>				
 	<script src="themes/js/superfish.js"></script>	
 	<script src="themes/js/jquery.scrolltotop.js"></script>
+	<script type="text/javascript" src="themes/js/jquery-ui.min.js"></script>
 		<!--[if lt IE 9]>			
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<script src="js/respond.min.js"></script>
@@ -33,7 +34,7 @@
 						<div class="input-group">
 							<input type="text" class="search-query form-control input-group" Placeholder="My laptop.">
 							<span class="input-group-btn">
-								<button class="btn btn-primary rounded-circle btnpro" type="button">
+								<button class="btn btn-primary rounded-circle btnpro" type="button" id="btn-search">
 									<span class="fa fa-search"></span>
 								</button>
 							</span>
@@ -225,25 +226,154 @@
 		</div>
 	</div>
 	<div class="span3 col">
-		<div class="block">	
-			<ul class="nav nav-list">
-				<li class="nav-header">DANH MỤC</li>
-				<li><a href="products.html">Sản phẩm bán chạy</a></li>
-				<li ><a href="products.html">Laptop 2 trong 1</a></li>
-				<li><a href="products.html">Cao cấp sang trọng</a></li>
-				<li><a href="products.html">Học tập văn phòng</a></li>
-				<li><a href="products.html">Đồ họa kỹ thuật</a></li>
-				<li><a href="products.html">Gaming</a></li>
-			</ul>
-			<br/>
-			<ul class="nav nav-list below">
-				<li class="nav-header">NHÃN HIỆU</li>
-				<li><a href="products.html">LENOVO</a></li>
-				<li><a href="products.html">Apple</a></li>
-				<li><a href="products.html">Asus</a></li>
-				<li><a href="products.html">Dell</a></li>
-				<li><a href="products.html">Lenovo</a></li>
-			</ul>
+		<div  id="menu-filter">
+			<h3>Mức Giá</h3>
+			<div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox1" type="checkbox" class="input-lg">
+					<label for="checkbox1">
+						Tất cả
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox2" type="checkbox" class="input-lg">
+					<label for="checkbox2">
+						Dưới 5 triệu
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox3" type="checkbox" class="input-lg">
+					<label for="checkbox3">
+						Từ 5 - 10 triệu
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox4" type="checkbox" class="input-lg">
+					<label for="checkbox4">
+						Từ 10 - 15 triệu
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox5" type="checkbox" class="input-lg">
+					<label for="checkbox5">
+						Từ 15 - 20 triệu
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox6" type="checkbox" class="input-lg">
+					<label for="checkbox6">
+						Trên 20 triệu
+					</label>
+				</div>
+			</div>
+			<h3>Loại Sản Phẩm</h3>
+			<div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox11" type="checkbox" class="input-lg">
+					<label for="checkbox11">
+						Tất cả
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox22" type="checkbox" class="input-lg">
+					<label for="checkbox22">
+						Chơi game
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox33" type="checkbox" class="input-lg">
+					<label for="checkbox33">
+						Học tập - văn phòng
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox44" type="checkbox" class="input-lg">
+					<label for="checkbox44">
+						Đồ họa - kỹ thuật
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox55" type="checkbox" class="input-lg">
+					<label for="checkbox55">
+						Cao cấp - Sang trọng
+					</label>
+				</div>
+
+			</div>
+			<h3>Hãng Sản Xuất</h3>
+			<div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox111" type="checkbox" class="input-lg">
+					<label for="checkbox111">
+						Tất cả
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox222" type="checkbox" class="input-lg">
+					<label for="checkbox222">
+						Apple
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox333" type="checkbox" class="input-lg">
+					<label for="checkbox333">
+						Dell
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox444" type="checkbox" class="input-lg">
+					<label for="checkbox444">
+						Asus
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox555" type="checkbox" class="input-lg">
+					<label for="checkbox555">
+						HP
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox666" type="checkbox" class="input-lg">
+					<label for="checkbox666">
+						Acer
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox777" type="checkbox" class="input-lg">
+					<label for="checkbox777">
+						Lenovo
+					</label>
+				</div>
+			</div>
+			<h3>Hệ Điều Hành</h3>
+			<div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox8" type="checkbox" class="input-lg">
+					<label for="checkbox8">
+						Tất cả
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox9" type="checkbox" class="input-lg">
+					<label for="checkbox9">
+						Windows
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox10" type="checkbox" class="input-lg">
+					<label for="checkbox10">
+						macOS
+					</label>
+				</div>
+				<div class="checkbox checkbox-primary">
+					<input id="checkbox12" type="checkbox" class="input-lg">
+					<label for="checkbox12">
+						Dos
+					</label>
+				</div>
+			</div>
+
+
 		</div>
 		<div class="block">
 			<h4 class="title">
@@ -282,30 +412,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="block">								
-			<h4 class="title"><strong>Bán</strong> chạy</h4>								
-			<ul class="small-product">
-				<li>
-					<a href="#" title="Praesent tempor sem sodales">
-						<img src="themes/images/cloth/laptop3.png" alt="Praesent tempor sem sodales">
-					</a>
-					<a href="#">Lenovo IdeaPad 320 15IKBN</a>
-				</li>
-				<li>
-					<a href="#" title="Luctus quam ultrices rutrum">
-						<img src="themes/images/cloth/laptop4.png" alt="Luctus quam ultrices rutrum">
-					</a>
-					<a href="#">Asus X541UA i3 6100U</a>
-				</li>
-				<li>
-					<a href="#" title="Fusce id molestie massa">
-						<img src="themes/images/cloth/laptop1.png" alt="Fusce id molestie massa">
-					</a>
-					<a href="#">HP 15 bs578TU</a>
-				</li>   
-			</ul>
-		</div>
+
 	</div>
+	
+	<script type="text/javascript">
+		$("#menu-filter").accordion();
+	</script>
+
 </section>
 <section style="background-color: #857474;" id="footer-bar">
 	<div class="row">
