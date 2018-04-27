@@ -72,19 +72,31 @@ table td {
 }
 
 table th {
-    background: #e74c3c;
+    background: #0984e3;
     color: #fff;
     text-transform: uppercase;
 }
 
-table tr td {
+/* table tr td {
     background: #f3faff;
     color: #424242;
-}
+} */
 
-table tr:nth-of-type(2n+2) td {
+/* table tr:nth-of-type(2n+2) td {
   background: #ffffff;
-}
+} */
+ 
+ .success {
+  background-color: #55efc4;
+ }
+
+ .danger {
+    background-color: #74b9ff;
+ }
+
+ .info {
+  background-color: #81ecec;
+ }
 
 table.bt tfoot th,
 table.bt tfoot td,
