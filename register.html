@@ -130,7 +130,7 @@
 				<div class="row">
 					<div class="span5">					
 						<h4 class="title"><span class="text"><strong>Login</strong> Form</span></h4>
-						<form action="#" method="post">
+						<form action="index.html" method="post">
 							<input type="hidden" name="next" value="/">
 							<fieldset>
 								<div class="control-group">
@@ -150,7 +150,7 @@
 							        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
 							    </label>
 								<div class="control-group">
-									<input tabindex="3" class="btn btn-primary large" type="submit" value="Sign into your account">
+									<input tabindex="3" class="btn btn-primary large" type="submit" id="submit" onclick="validate()" value="Sign into your account">
 									<hr>
 									<p class="reset">Recover your <a tabindex="4" href="#" title="Recover your username or password">username or password</a></p>
 								</div>
@@ -159,24 +159,25 @@
 					</div>
 					<div class="span7">					
 						<h4 class="title"><span class="text"><strong>Register</strong> Form</span></h4>
-						<form action="#" method="post" class="form-stacked">
+						<form action="index.html" method="post" class="form-stacked">
 							<fieldset>
 								<div class="control-group">
 									<label class="control-label">Username</label>
 									<div class="controls">
-										<input type="text" placeholder="Enter your username" class="input-xlarge" name="username" required>
+										<input type="text" placeholder="Enter your username" class="input-xlarge"
+										id="username1" name="username" required>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label">Email address:</label>
 									<div class="controls">
-										<input type="text" placeholder="Enter your email" class="input-xlarge" name="email" required>
+										<input type="text" placeholder="Enter your email" class="input-xlarge" id="email1" name="email" required>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label">Password:</label>
 									<div class="controls">
-										<input type="password" placeholder="Enter your password" class="input-xlarge" name="password" required>
+										<input type="password" placeholder="Enter your password" class="input-xlarge" id="password1" name="password" required>
 									</div>
 								</div>							                            
 								<div class="control-group">
@@ -184,7 +185,7 @@
 								</div>
 								<hr>
 								<div class="g-recaptcha" data-sitekey="6LfExFUUAAAAAD2ouMMgpoIrl6tZED6yKcqrpa1i"></div>
-								<div class="actions"><input tabindex="9" class="btn btn-primary large" type="submit" value="Create your account"></div>
+								<div class="actions"><input tabindex="9" class="btn btn-primary large" id="submit1" onclick="validate1()" type="submit" value="Create your account"></div>
 
 							</fieldset>
 							
@@ -257,6 +258,51 @@
 					document.location.href = "checkout.html";
 				})
 			});
-		</script>		
+		</script>	
+		<script type="text/javascript">
+			var attempt=3;
+			function validate(){
+				var username=document.getElementById("username").value;
+				var password=document.getElementById("password").value;
+				if(username=="DHP" && password=="DHP")
+				{
+					alert("Login successfully!");
+					window.location="/index.html";
+					return false;
+				}
+				else{
+					attempt--;
+					alert("Fail to login");
+				}
+				if(attempt==0){
+					document.getElementById("username").disabled=true;
+					document.getElementById("password").disabled=true;
+					document.getElementById("submit").disabled=true;
+					return false;
+				}
+			}
+			function validate1(){
+				var username=document.getElementById("username1").value;
+				var password=document.getElementById("password1").value;
+				var email=document.getElementById("email1").value;
+				if(username=="DHP" && password=="DHP" && email=="123@gmail.com")
+				{
+					alert("Create account successfully!");
+					window.location="index.html";
+					return false;
+				}
+				else{
+					attempt--;
+					alert("Fail to login");
+				}
+				if(attempt==0){
+					document.getElementById("username1").disabled=true;
+					document.getElementById("password1").disabled=true;
+					document.getElementById("email1").disabled=true;
+					document.getElementById("submit1").disabled=true;
+					return false;
+				}
+			}
+		</script>
     </body>
 </html>
