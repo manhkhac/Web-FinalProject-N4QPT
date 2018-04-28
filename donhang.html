@@ -98,7 +98,7 @@
 						</thead>
 						<tbody>
 						   <tr class="danger">
-							<td>7</td>
+							<td>1</td>
 							<td>Trần Văn Hùng</td>
 							<td>83, An Dương Vương, P4, Q5</td>
 							<td>09047383221</td>
@@ -107,7 +107,7 @@
 							<td style="text-align: center;"><a class="agile-icon" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil-square-o"></i></a></td>
 						  </tr>
 						  <tr class="danger">
-							<td>6</td>
+							<td>2</td>
 							<td>Trần Hạnh</td>
 							<td>1, Nguyễn Thị Minh Khai, P4, Q5</td>
 							<td>09047383221</td>
@@ -116,7 +116,7 @@
 							<td style="text-align: center;"><a class="agile-icon" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil-square-o"></i></a></td>
 						  </tr>
 						  <tr class="info">
-							<td>5</td>
+							<td>3</td>
 							<td>Nguyễn Long</td>
 							<td>234, An Dương Vương, P4, Q5</td>
 							<td>09047383221</td>
@@ -134,7 +134,7 @@
 							<td style="text-align: center;"><a class="agile-icon" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil-square-o"></i></a></td>
 						  </tr>
 						  <tr class="success">
-							<td>3</td>
+							<td>5</td>
 							<td>Trần Văn Hòa</td>
 							<td>23, Lê Hồng Phong, P4, Q5</td>
 							<td>09047383221</td>
@@ -143,7 +143,7 @@
 							<td style="text-align: center;"><a class="agile-icon" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil-square-o"></i></a></td>
 						  </tr>
 						   <tr class="success">
-							<td>2</td>
+							<td>6</td>
 							<td>Trần Văn Tùng</td>
 							<td>63, Nguyễn Văn Cừ, P4, Q5</td>
 							<td>09047383221</td>
@@ -152,7 +152,7 @@
 							<td style="text-align: center;"><a class="agile-icon" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil-square-o"></i></a></td>
 						  </tr>
 						  <tr class="success">
-							<td>1</td>
+							<td>7</td>
 							<td>Trần Văn Kiên</td>
 							<td>123, An Dương Vương, P4, Q5</td>
 							<td>09047383221</td>
@@ -180,19 +180,21 @@
         </div>
         <div class="modal-body">
           <p>Mời bạn nhập tình trạng đơn hàng: </p>
-			<div class="form-group">
-			  <label for="ma">Mã đơn hàng:</label>
-			  <input type="text" class="form-control" id="ma">
-			</div>
-			<div class="form-group">
-			  <label for="status">Tình trạng:</label>
-			  <input type="text" class="form-control" id="status">
-			</div>
-			<button type="submit" class="btn btn-default">Cập nhật</button>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+			<form action="">
+				<div class="form-group">
+					  <label for="ma">Mã đơn hàng:</label>
+					  <input type="text" class="form-control" id="ma">
+					</div>
+					<div class="form-group">
+					  <label for="status">Tình trạng:</label>
+					  <input type="text" class="form-control" id="status">
+					</div>
+					<button type="submit" class="btn btn-default">Cập nhật</button>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+			</form>
       </div>
       
     </div>
@@ -266,9 +268,9 @@
 									
 									 <li id="menu-academico" ><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i><span>Sản phẩm</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
 										   <ul id="menu-academico-sub" >
-										   <li id="menu-academico-avaliacoes" ><a href="icons.html">Thêm sản phẩm</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="typography.html">Loại sản phẩm</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="faq.html">Nhà sản xuất</a></li>
+										   <li id="menu-academico-avaliacoes" ><a href="sanpham.html">Quản lý sản phẩm</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="sanpham1.html">Loại sản phẩm</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="sanpham2.html">Nhà sản xuất</a></li>
 										  </ul>
 										</li>
 									
@@ -276,8 +278,8 @@
 									  <li id="menu-academico" ><a href="#"><i class="fa fa-file-text-o"></i>  <span>Khác</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
 										 <ul id="menu-academico-sub" >
 											<li id="menu-academico-boletim" ><a href="calendar.html">Lịch</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="signin.html">Đăng nhập</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="signup.html">Đăng ký</a></li>
+						<!-- 					<li id="menu-academico-avaliacoes" ><a href="signin.html">Đăng nhập</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="signup.html">Đăng ký</a></li> -->
 											
 
 										  </ul>

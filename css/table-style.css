@@ -98,6 +98,12 @@ table th {
   background-color: #81ecec;
  }
 
+ button.btn.btn-default {
+    background-color: #03A9F4;
+    border-radius:  5px;
+    padding: 10px 26px;
+}
+
 table.bt tfoot th,
 table.bt tfoot td,
 table.bt tbody td {
