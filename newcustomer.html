@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Register</title>
+		<title>New Customer</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
@@ -11,9 +11,6 @@
 		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">		
 		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
 		<link rel="stylesheet" type="text/css" href="themes/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="themes/css/font-awesome.min2.css"> -->
-	<link rel="stylesheet" type="text/css" href="themes/css/font-awesome.min3.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 		<!-- global styles -->
 		<link href="themes/css/flexslider.css" rel="stylesheet"/>
 		<link href="themes/css/main.css" rel="stylesheet"/>
@@ -27,7 +24,6 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<script src="js/respond.min.js"></script>
 		<![endif]-->
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
     <body>		
 		<div id="top-bar" class="container">
@@ -48,10 +44,9 @@
 				<div class="span8">
 					<div class="account pull-right">
 						<ul class="user-menu">				
-							<li><a href="#">Tài khoản</a></li>
 							<li><a href="cart.html">Giỏ hàng</a></li>
 							<li><a href="checkout.html">Thanh toán</a></li>					
-							<li><a href="register.html">Đăng nhập</a></li>		
+							<li><a href="customer.html">DPH</a></li>		
 						</ul>
 					</div>
 				</div>
@@ -127,73 +122,41 @@
 			</section>			
 			<br/>
 			<br/>
-				<h4><span>Login or Regsiter</span></h4>
+				<h4><span>Cập nhật thông tin</span></h4>
 			</section>			
-			<section class="main-content">				
+			<section class="main-content">		
 				<div class="row">
 					<div class="span5">					
-						<h4 class="title"><span class="text"><strong>Login</strong> Form</span></h4>
-						<form action="index.html" method="post">
+						<h4 class="title"><span class="text"><strong>Thông tin</strong> cá nhân</span></h4>
+						<form action="newcustomer.html" method="post">
 							<input type="hidden" name="next" value="/">
 							<fieldset>
 								<div class="control-group">
-									<label class="control-label">Username</label>
+									<label class="control-label">Họ tên</label>
 									<div class="controls">
-										<input type="text" placeholder="Enter your username" id="username" class="input-xlarge" name="username" required>
+										<input type="text" placeholder="Nhập họ tên"  class="input-xlarge" id="name" name="name" required>
 									</div>
 								</div>
 								<div class="control-group">
-									<label class="control-label">Password</label>
+									<label class="control-label">Địa chỉ</label>
 									<div class="controls">
-
-										<input type="password" placeholder="Enter your password" id="password" class="input-xlarge" name="password" required>
+										<input type="text" placeholder="Nhập địa chỉ"  class="input-xlarge" id="address" name="address" required>
 									</div>
 								</div>
-								<label>
-							        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-							    </label>
 								<div class="control-group">
-									<input tabindex="3" class="btn btn-primary large" type="submit" id="submit" onclick="validate()" value="Sign into your account">
+									<label class="control-label">Số điện thoại</label>
+									<div class="controls">
+										<input type="text" placeholder="Nhập số điện thoại" id="numberphone" class="input-xlarge" name="numberphone" required>
+									</div>
+								</div>
+								<div class="control-group">
+									<input tabindex="3" class="btn btn-primary large" type="submit" id="submit" onclick="validate()" value="Cập nhật thông tin">
 									<hr>
-									<p class="reset">Recover your <a tabindex="4" href="#" title="Recover your username or password">username or password</a></p>
 								</div>
 							</fieldset>
 						</form>				
 					</div>
-					<div class="span7">					
-						<h4 class="title"><span class="text"><strong>Register</strong> Form</span></h4>
-						<form action="newcustomer.html" method="post" class="form-stacked">
-							<fieldset>
-								<div class="control-group">
-									<label class="control-label">Username</label>
-									<div class="controls">
-										<input type="text" placeholder="Enter your username" class="input-xlarge"
-										id="username1" name="username" required>
-									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label">Email address:</label>
-									<div class="controls">
-										<input type="text" placeholder="Enter your email" class="input-xlarge" id="email1" name="email" required>
-									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label">Password:</label>
-									<div class="controls">
-										<input type="password" placeholder="Enter your password" class="input-xlarge" id="password1" name="password" required>
-									</div>
-								</div>							                            
-								<div class="control-group">
-									<p>Now that we know who you are. I'm not a mistake! In a comic, you know how you can tell who the arch-villain's going to be?</p>
-								</div>
-								<hr>
-								<div class="g-recaptcha" data-sitekey="6LfExFUUAAAAAD2ouMMgpoIrl6tZED6yKcqrpa1i"></div>
-								<div class="actions"><input tabindex="9" class="btn btn-primary large" id="submit1" onclick="validate1()" type="submit" value="Create your account"></div>
-
-							</fieldset>
-							
-						</form>					
-					</div>				
+									
 				</div>
 			</section>			
 			<section style="background-color: #857474;" id="footer-bar">
@@ -211,7 +174,7 @@
 					<div class="span4">
 						<h4>My Account</h4>
 						<ul class="nav">
-							<li><a href="#">Tài khoản của tôi</a></li>
+							<li><a href="customer.html">Tài khoản của tôi</a></li>
 							<li><a href="#">Lịch sử đặt hàng</a></li>
 							<li><a href="#">Danh sách yêu thích</a></li>
 							<!-- <li><a href="#">Làm mới</a></li> -->
@@ -223,13 +186,13 @@
 							<br/>Hãy ghé thăm trang web của chúng tôi và đừng bỏ lỡ các sản phẩm mới nhé!</p>
 							<div style="margin-left: 60px;">
 								<a href="#" class="button">
-									<i class="fab fa-facebook-f fa-lg"></i>
+									<i class="fa fa-fw fa-facebook fa-lg"></i>
 								</a>
 								<a href="#" class="button">
-									<i class="fab fa-twitter fa-lg"></i>
+									<i class="fa fa-fw fa-twitter fa-lg"></i>
 								</a>
 								<a href="#" class="button">
-									<i class="fab fa-instagram fa-lg"></i>
+									<i class="fa fa-fw fa-instagram fa-lg"></i>
 								</a>
 							</div>
 							
@@ -261,51 +224,32 @@
 					document.location.href = "checkout.html";
 				})
 			});
-		</script>	
+		</script>
 		<script type="text/javascript">
 			var attempt=3;
 			function validate(){
-				var username=document.getElementById("username").value;
-				var password=document.getElementById("password").value;
-				if(username=="DHP" && password=="DHP")
+				var name=document.getElementById("name").value;
+				var address=document.getElementById("address").value;
+				var numberphone=document.getElementById("numberphone").value;
+				if(name!=null && address!=null && numberphone!=null )
 				{
-					alert("Login successfully!");
-					window.location="/index.html";
+					alert("Update information successfully!");
+					window.location="newcustomer.html";
 					return false;
 				}
 				else{
 					attempt--;
-					alert("Fail to login");
+					alert("Fail to update");
+				}
 				}
 				if(attempt==0){
-					document.getElementById("username").disabled=true;
-					document.getElementById("password").disabled=true;
+					document.getElementById("name").disabled=true;
+					document.getElementById("address").disabled=true;
+					document.getElementById("numberphone").disabled=true;
 					document.getElementById("submit").disabled=true;
 					return false;
 				}
 			}
-			function validate1(){
-				var username=document.getElementById("username1").value;
-				var password=document.getElementById("password1").value;
-				var email=document.getElementById("email1").value;
-				if(username=="DHP" && password=="DHP" && email=="123@gmail.com")
-				{
-					alert("Create account successfully!");
-					window.location="index.html";
-					return false;
-				}
-				else{
-					attempt--;
-					alert("Fail to login");
-				}
-				if(attempt==0){
-					document.getElementById("username1").disabled=true;
-					document.getElementById("password1").disabled=true;
-					document.getElementById("email1").disabled=true;
-					document.getElementById("submit1").disabled=true;
-					return false;
-				}
-			}
 		</script>
-    </body>
-</html>
+	</body>
+</html>	
