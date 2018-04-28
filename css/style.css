@@ -1239,9 +1239,17 @@ small.lg-item-text {
     margin-right: 15px;
     color: #ffffff;
 }
+
+
 a.list-group-item, button.list-group-item {
-    color: #fff;
+    color: #2196F3;
 }
+
+
+a.list-group-item:hover {
+    background-color: #337ab7!important;
+}
+
 .list-group-item {
     position: relative;
     display: block;
@@ -4470,7 +4478,7 @@ label.control-label {
 }
 .agile-tables {
     background: #fff;
-    padding: 2em;
+    padding: 0em;
     margin: 2em 0;
 }
 .w3l-calendar-left {
